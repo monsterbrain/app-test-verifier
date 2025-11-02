@@ -1,15 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import TestSection from './TestSection';
+import testData from './testCases.json';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          This is a simple React app.
-        </p>
-        <button>Click me</button>
+        <h1>Test Cases</h1>
       </header>
+      <main>
+        {testData.testCases.map((section) => (
+          <TestSection
+            key={section.section}
+            section={section.section}
+            tests={section.tests}
+          />
+        ))}
+      </main>
     </div>
   );
 }

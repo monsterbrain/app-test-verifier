@@ -15,12 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
@@ -34,5 +29,55 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.test-section {
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.test-section h2 {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.test-case {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.test-case-id {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.test-case-description {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.test-case-actions {
+  display: flex;
+  align-items: center;
+}
+
+.test-case-actions label {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .test-case {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .test-case-actions {
+    margin-top: 10px;
   }
 }
