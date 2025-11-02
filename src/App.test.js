@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders the simple react app text', () => {
+test('renders the test cases heading', () => {
   render(<App />);
-  const textElement = screen.getByText(/this is a simple react app/i);
-  expect(textElement).toBeInTheDocument();
+  const headingElement = screen.getByText(/Test Cases/i);
+  expect(headingElement).toBeInTheDocument();
 });

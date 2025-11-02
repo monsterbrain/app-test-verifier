@@ -1,0 +1,59 @@
+{
+  "testCases": [
+    {
+      "section": "Search Bar",
+      "tests": [
+        {
+          "id": 1,
+          "description": "സെർച്ച് ഐക്കൺ ശരിയായി കാണിക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 2,
+          "description": "ക്ലിക്ക് ചെയ്‌താൽ കർസർ ആക്ടീവ് ആകുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 3,
+          "description": "കീബോർഡ് തുറക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 4,
+          "description": "മലയാളം / ഇംഗ്ലീഷ് ടൈപ്പ് ചെയ്യാം",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 5,
+          "description": "ടൈപ്പ് ചെയ്‌തപ്പോൾ ഫലങ്ങൾ ഉടനെ കാണിക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 6,
+          "description": "ഇല്ലാത്ത വാക്ക് ടൈപ്പ് ചെയ്‌താൽ 'No results' സന്ദേശം കാണിക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 7,
+          "description": "ഫലം ക്ലിക്ക് ചെയ്‌താൽ അനുയോജ്യമായ പേജ് (Audio/Video/Document) തുറക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        },
+        {
+          "id": 8,
+          "description": "ബാക്ക് ബട്ടൺ അമർത്തുമ്പോൾ സെർച്ച് ബാർ അടയുന്നു",
+          "platform": ["Android"]
+        },
+        {
+          "id": 9,
+          "description": "സ്വൈപ്പ് ഡൗൺ ചെയ്‌താൽ കീബോർഡ് അടയുന്നു",
+          "platform": ["iOS"]
+        },
+        {
+          "id": 10,
+          "description": "നെറ്റ് ഇല്ലാതെ സെർച്ച് ചെയ്‌താൽ 'No internet' സന്ദേശം കാണിക്കുന്നു",
+          "platform": ["Android", "iOS"]
+        }
+      ]
+    }
+  ]
+}
