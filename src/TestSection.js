@@ -10,7 +10,10 @@ const TestSection = ({ section, tests }) => {
 
   return (
     <div className="test-section">
-      <h2 onClick={toggleCollapse}>{section}</h2>
+      <h2 onClick={toggleCollapse}>
+        <span className={`arrow ${isCollapsed ? 'down' : 'up'}`}></span>
+        {section}
+      </h2>
       {!isCollapsed && (
         <div className="test-cases">
           {tests.map((test) => (
