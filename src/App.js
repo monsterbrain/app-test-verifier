@@ -1,6 +1,6 @@
 import React from 'react';
 import TestSection from './TestSection';
-import testData from './testCases.json';
+import { testCases } from './testCases.json';
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <h1>Test Cases</h1>
       </header>
       <main>
-        {testData.testCases.map((section) => (
+        {testCases.map((section) => (
           <TestSection
             key={section.section}
             section={section.section}
